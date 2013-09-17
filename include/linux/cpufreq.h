@@ -343,16 +343,6 @@ static inline unsigned int cpufreq_quick_get(unsigned int cpu)
 }
 #endif
 
-#ifdef CONFIG_USA_MODEL_SGH_I577
-
-#ifdef CONFIG_CPU_OC
-#define MAX_FREQ_LIMIT          1512000
-#else
-#define MAX_FREQ_LIMIT          1242000
-#endif
-
-#else
-
 #ifdef CONFIG_CPU_OC
 #define MAX_FREQ_LIMIT          1782000
 #else
@@ -370,12 +360,6 @@ enum {
 	NON_BOOT_CPU = 1
 };
 
-#define MAX_TOUCH_LIMIT		486000
-#ifdef CONFIG_TARGET_SERIES_DALI
-#define MAX_UNICPU_LIMIT	1188000	
-#else
-#define MAX_UNICPU_LIMIT	1242000	
-#endif
 
 #define UPDATE_NOW_BITS		0xFF
 
