@@ -1885,8 +1885,7 @@ static irqreturn_t mxt224_irq_thread(int irq, void *ptr)
 
 	#ifndef CLEAR_MEDIAN_FILTER_ERROR
 		unsigned int register_address = 0;
-	#else
-		bool ta_status=0;
+	
 	#endif
 
 #endif
